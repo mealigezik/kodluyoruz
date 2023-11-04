@@ -1,0 +1,1 @@
+responsive design with display and visiable
