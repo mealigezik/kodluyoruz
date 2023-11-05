@@ -57,6 +57,14 @@ nav.navbar{
   font-family: 'Helvetica', FontAwesome, sans-serif;
 }
 
+div.middlearea{
+  max-height: 200px!important;
+}
+
+.fas{
+  float: right;
+}
+
 input{
   
 }
