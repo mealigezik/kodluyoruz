@@ -15,14 +15,16 @@
       integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/instagramclone/css/style.css" />
+    <link rel="stylesheet" href="/bootstrap/task2/css/style.css" />
     <title>Instagram</title>
   </head>
-  <body>
+  <body class="p-1">
     <nav
-      class="navbar navbar-expand-sm navbar-light border"
+      class="navbar navbar-expand-sm navbar-light border sticky-top"
     >
-      <div class="logo">
+    <div class="row">
+    </div>
+      <div class="col-sm-4 bg-warning logo">
             <a class="navbar-brand" href="#"
               ><img
                 src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
@@ -39,19 +41,20 @@
               <span class="navbar-toggler-icon mr-5"></span>
             </button>
           </div>
-      <div class="collapse navbar-collapse">
+      <div class="col-sm-4 bg-info ml-5 collapse navbar-collapse">
         <form class="form-inline my-2 my-lg-0 ml-5 d-none d-sm-block">
+          <i class="fa-solid fa-magnifying-glass"></i>
           <input
             class="form-control mr-sm-2 empty"
             type="search"
-            placeholder="Ara"
+            placeholder="&#xf002; Ara"
             style="font-family: Arial, FontAwesome; height: 28px; width: 216px"
             aria-label="Search"
           />
         </form>
       </div>
       <div
-        class="collapse navbar-collapse"
+        class="col-sm-4 bg-warning collapse navbar-collapse"
       >
         <ul class="navbar-nav">
           <li class="nav-item active">
