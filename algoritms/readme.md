@@ -70,7 +70,7 @@ Proje 3
 #Answer#
 
 
-Root: 5
+        Root: 5
 
 -           5
 -        /    \
