@@ -1,0 +1,3 @@
+[submodule "kodluyoruz-frontend-101-egitimi"]
+	path = kodluyoruz-frontend-101-egitimi
+	url = https://github.com/mealigezik/kodluyoruz.git
