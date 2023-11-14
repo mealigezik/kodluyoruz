@@ -16,8 +16,18 @@ console.log(title)
 console.log(title.innerHTML)
 console.log(title.innerText)
 console.log(typeof title.innerText)
-console.log(typeof(title.innerHTML = "Merhaba"))
+console.log(typeof (title.innerHTML = "Merhaba"))
 
-let link = document.querySelector("ul>li>a")
+let link = document.querySelector("ul#myList>li>a")
+
+link.innerHTML += " - changed"
 
 console.log(link);
+console.log(link.innerHTML);
+console.log(link.innerText);
+
+console.log(document.getElementById(myList));
+
+link.style.color = "white"
+
+link.classList.add("btn")
