@@ -121,3 +121,7 @@ ${lastName[0].toUpperCase()}
 ${lastName.slice(1).toLowerCase()}`
 
 console.log(fullName);
+
+console.log(document.URL);
+console.log(document.location);
+console.log(document.location.hostname);
