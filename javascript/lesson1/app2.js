@@ -17,3 +17,7 @@ console.log(title.innerHTML)
 console.log(title.innerText)
 console.log(typeof title.innerText)
 console.log(typeof(title.innerHTML = "Merhaba"))
+
+let link = document.querySelector("ul>li>a")
+
+console.log(link);
