@@ -12,14 +12,17 @@ console.log(item2);
 
 document.querySelector("ul#myList>li:first-child").innerHTML = "Artik Bursa"
 
-let ulDOM = document.querySelector("ul#myList").innerText
+let ulDOM = document.querySelector("ul#myList")
+let liDOM = document.createElement('li')
+
 console.log(ulDOM);
 
-let liDOM = document.createElement("li")
 liDOM.innerHTML = "self created element"
 
 ulDOM.append(liDOM)
 
-console.log(item);
+// console.log(ulDOM.lastChild);
 
-// console.log(liDOM);
+// ulDOM.prepend(prompt("Please enter name: "))
+ulDOM.append(prompt("Please enter name: ")) //todolist muhabbeti
+
