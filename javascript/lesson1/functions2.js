@@ -1,8 +1,15 @@
-// let firstName = "Lorem"
+let firstName = "Lorem"
+// let lastName = "Ipsum"
 
-function greeting(firstName="") {
+function greeting(firstName="", lastName="") {
     // console.log(`Hello  ${firstName ? firstName : "Empty"}`);
-    console.log(`Hello ${firstName}`);
+    // console.log(`taked deft parameter ->> Hello ${firstName}`);
+    console.log(`Merhaba ${firstName} and ${lastName}`);
+    console.log(firstName, lastName);
 }
 
-greeting("Bilge")
+
+greeting()
+
+
+
