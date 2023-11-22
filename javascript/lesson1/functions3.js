@@ -1,0 +1,22 @@
+function hello(firstName) {
+    console.log(`Merhaba ${firstName}`);
+}
+
+hello("Javascript")
+// hello()
+
+const helloFuncV1 = (firstName) => { console.log(`Merhaba ${firstName}`) }
+helloFuncV1('Arrow Function v1')
+
+const helloFuncV2 = firstName => console.log(`Merhaba ${firstName}`);
+helloFuncV2('Arrow Function v2')
+
+const helloFuncV3 = (firstName, lastName) => console.log(`Merhaba ${firstName} ${lastName}`);
+helloFuncV3('Arrow Function v3', 'Second Element')
+
+const helloFuncV4 = (firstName, lastName) => {
+    let info = `Merhaba ${firstName} ${lastName}`
+    console.log(info);
+    return info
+}
+helloFuncV4('Arrow Function v3', 'Third Element')
