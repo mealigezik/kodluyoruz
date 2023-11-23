@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kart Döndürme</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f9fa;
+        }
+
+        .card {
+            width: 150px;
+            height: 200px;
+            margin: 10px;
+            perspective: 1000px;
+            cursor: pointer;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .card-inner {
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.5s;
+            transform: rotateY(0deg);
+        }
+
+
+
+        .card:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .front,
+        .back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 10px;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .front {
+            background-color: #3498db;
+            /* Mavi renk */
+        }
+
+        .back {
+            background-color: #e74c3c;
+            /* Kırmızı renk */
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card-container">
+
+
+        <div class="card" onclick="turnCard(this)">
+            <div class="card-inner">
+                <div class="front" style="font-size: 2rem;">gehen</div>
+                <div class="back">
+                    <div style="font-size:1.8rem">ging</div>
+                    <hr>
+                    <div style="color:yellow; font-size: 1rem;">(gitti)</div>
+                </div>
+            </div>
+        </div>
+        <div class="card" onclick="turnCard(this)">
+            <div class="card-inner">
+                <div class="front" style="font-size: 2rem;">haben</div>
+                <div class="back">
+                    <div style="font-size:1.8rem">hatte</div>
+                    <hr>
+                    <div style="color:yellow; font-size: 1rem;">(sahip oldu)</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="turnCard(this)">
+            <div class="card-inner">
+                <div class="front" style="font-size: 2rem;">sein</div>
+                <div class="back">
+                    <div style="font-size:1.8rem">war</div>
+                    <hr>
+                    <div style="color:yellow; font-size: 1rem;">(idi)</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="turnCard(this)">
+            <div class="card-inner">
+                <div class="front" style="font-size: 2rem;">machen</div>
+                <div class="back">
+                    <div style="font-size:1.8rem">machte</div>
+                    <hr>
+                    <div style="color:yellow; font-size: 1rem;">(yaptı)</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="turnCard(this)">
+            <div class="card-inner">
+                <div class="front" style="font-size: 2rem;">können</div>
+                <div class="back">
+                    <div style="font-size:1.8rem">konnte</div>
+                    <hr>
+                    <div style="color:yellow; font-size: 1rem;">(yapabilirdi)</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="turnCard(this)">
+            <div class="card-inner">
+                <div class="front" style="font-size: 2rem;">sagen</div>
+                <div class="back">
+                    <div style="font-size:1.8rem">sagte</div>
+                    <hr>
+                    <div style="color:yellow; font-size: 1rem;">(söyledi)</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="turnCard(this)">
+            <div class="card-inner">
+                <div class="front" style="font-size: 2rem;">kommen</div>
+                <div class="back">
+                    <div style="font-size:1.8rem">kam</div>
+                    <hr>
+                    <div style="color:yellow; font-size: 1rem;">(geldi)</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="turnCard(this)">
+            <div class="card-inner">
+                <div class="front" style="font-size: 2rem;">sehen</div>
+                <div class="back">
+                    <div style="font-size:1.8rem">sah</div>
+                    <hr>
+                    <div style="color:yellow; font-size: 1rem;">(gördü)</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="turnCard(this)">
+            <div class="card-inner">
+                <div class="front" style="font-size: 2rem;">wissen</div>
+                <div class="back">
+                    <div style="font-size:1.8rem">wusste</div>
+                    <hr>
+                    <div style="color:yellow; font-size: 1rem;">(biliyordu)</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="turnCard(this)">
+            <div class="card-inner">
+                <div class="front" style="font-size: 2rem;">nehmen</div>
+                <div class="back">
+                    <div style="font-size:1.8rem">nahm</div>
+                    <hr>
+                    <div style="color:yellow; font-size: 1rem;">(aldı)</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Geriye kalan kartları da ekleyin -->
+
+
+    </div>
+
+    <script>
+        function turnCard(card) {
+            card.querySelector('.card-inner').classList.toggle('flipped');
+        }
+    </script>
+
+</body>
+
+</html>
