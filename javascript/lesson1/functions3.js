@@ -48,3 +48,9 @@ function domClick(){
     
 // }
 
+let input = document.getElementById('input');
+let output = document.getElementById('output');
+
+input.addEventListener('select', function(event) {
+output.innerText = event.target.value.split('').join('');
+});
