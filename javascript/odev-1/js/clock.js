@@ -5,6 +5,7 @@ document.getElementById("myName").textContent = userName;
 function myTime() {
     let actualTime = document.getElementById("myClock")
     let fullTime = new Date();
+    let days = fullTime.toLocaleDateString("tr-TR", { weekday: 'long' })
     let hours = fullTime.getHours();
     let minutes = fullTime.getMinutes();
     let seconds = fullTime.getSeconds();
@@ -15,7 +16,7 @@ function myTime() {
     seconds = (seconds < 10) ? "0" + seconds : seconds;
     milliseconds = (milliseconds < 10) ? "0" + milliseconds : milliseconds;
 
-    let screenTime = hours + ":" + minutes + ":" + seconds + ":" + Math.floor(milliseconds / 100);
+    let screenTime = hours + ":" + minutes + ":" + seconds + ":" + Math.floor(milliseconds / 100) + "Bugün" + "<br>" + days;
 
     actualTime.innerHTML = screenTime;
 }

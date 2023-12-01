@@ -39,3 +39,6 @@ body {
     color: yellow;
     /* background-color: red; */
   }
+  p{
+    color: rgb(170, 5, 170);
+  }
