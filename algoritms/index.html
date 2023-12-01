@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kukla Etkileşimi</title>
+</head>
+<body>
+
+<script>
+  // Kukla sınıfını oluştur
+  class Puppet {
+    constructor() {
+      this.name = null;
+    }
+
+    // Adı soran fonksiyon
+    askName() {
+      this.name = prompt("Adın ne?");
+      this.greet();
+    }
+
+    // Selam veren fonksiyon
+    greet() {
+      alert("Merhaba " + this.name + "!");
+    }
+  }
+
+  // Kuklayı oluştur
+  const myPuppet = new Puppet();
+
+  // Kuklaya adı sormasını söyle
+  myPuppet.askName();
+</script>
+
+</body>
+</html>
