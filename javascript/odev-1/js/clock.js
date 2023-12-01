@@ -1,6 +1,6 @@
-// let userName = prompt("Your Name?");
+let userName = prompt("Your Name?");
 
-// document.getElementById("myName").textContent = userName;
+document.getElementById("myName").textContent = userName;
 
 function myTime() {
     let actualTime = document.getElementById("myClock")
