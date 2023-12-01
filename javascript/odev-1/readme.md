@@ -1,0 +1,1 @@
+[https://mealigezik.github.io/kodluyoruz/javascript/odev-1/]
