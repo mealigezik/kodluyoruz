@@ -16,7 +16,7 @@ function myTime() {
     seconds = (seconds < 10) ? "0" + seconds : seconds;
     milliseconds = (milliseconds < 10) ? "0" + milliseconds : milliseconds;
 
-    let screenTime = hours + ":" + minutes + ":" + seconds + ":" + Math.floor(milliseconds / 100) + "Bugün" + "<br>" + days;
+    let screenTime = hours + ":" + minutes + ":" + seconds + ":" + Math.floor(milliseconds / 100) + "<br>" + "Bugün "+ days;
 
     actualTime.innerHTML = screenTime;
 }
