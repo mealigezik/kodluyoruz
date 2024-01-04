@@ -1,6 +1,6 @@
 //! -------SAYAC ARTIRMA-------------
 
-let counter = 0;
+let counter = localStorage.getItem("counter") ? Number(localStorage.getItem("counter")) : 0;
 let counterDOM = document.querySelector("#counter");
 let increaseDOM = document.querySelector("#increase");
 let decreaseDOM = document.querySelector("#decrease");
@@ -20,11 +20,13 @@ decreaseDOM.addEventListener("click", clickEvent)
 //     return counter
 // }
 
-// function clickEvent() {
-//     this.id == "increase" ? counterDOM.innerHTML = counter++ : counterDOM.innerHTML = counter--
-// }
-
 function clickEvent() {
+    this.id == "increase" ? counterDOM.innerHTML = counter++ : counterDOM.innerHTML = counter--
+    localStorage.setItem("counter", counter)
     counterDOM.innerHTML = counter
-    this.id == "increase" ? counter++ : counter--
 }
+
+// function clickEvent() {
+//     counterDOM.innerHTML = counter
+//     this.id == "increase" ? counter++ : counter--
+// }
