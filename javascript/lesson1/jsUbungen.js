@@ -30,3 +30,5 @@ function clickEvent() {
 //     counterDOM.innerHTML = counter
 //     this.id == "increase" ? counter++ : counter--
 // }
+
+// deneme
