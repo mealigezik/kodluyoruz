@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    .card {
+      position: relative;
+      width: 120px;
+      height: 200px;
+      margin: 10px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card .front,
+    .card .back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      backface-visibility: hidden;
+    }
+
+    .card .back {
+      transform: rotateY(180deg);
+      color: #fff;
+      background-color: #3498db;
+    }
+
+    .card.active .front {
+      display: none;
+    }
+
+    .card.active .back {
+      display: flex;
+    }
+  </style>
+  <title>Soy Ağacı</title>
+</head>
+<body>
+
+  <div class="card" onclick="flipCard(this)">
+    <div class="front">
+      <p>?</p>
+    </div>
+    <div class="back">
+      <p>İsim Soyisim</p>
+    </div>
+  </div>
+
+  <!-- Buraya soy ağacındaki diğer kartları ekleyebilirsin -->
+
+  <script>
+    function flipCard(card) {
+      card.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
